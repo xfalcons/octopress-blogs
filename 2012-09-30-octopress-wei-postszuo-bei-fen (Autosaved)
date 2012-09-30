@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Octopress:為posts作備份"
+date: 2012-09-30 14:17
+comments: true
+categories: Octopress
+---
+
+[Backup](http://db.tt/rtTkuYuL)
+
+在還沒有開始寫文章之前，先把文章的目錄設定好，備份到 github 上去，省去日後的麻煩。
+
+先到你的 github 去新增一個 repository, 例如：octopress-posts
+
+建立文章的目錄在 octopress/source/_posts, 一開始是空的，接著從 github clone 回來
+	cd octopress/source/
+	git clone https://github.com/xfalcons/octopress-blogs.git _posts
+
+這樣就可以開始寫文章了，記得要備份時做
+	cd octopress/source/_posts
+	git add .
+	git commit -m "Add new posts"
+	git push
+
+	
+
